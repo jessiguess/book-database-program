@@ -1,4 +1,4 @@
-from models import (base, session, 
+from models import (Base, session, 
                     Book, engine)
 # main menu - add, search, analysis, exit, view
 # add books

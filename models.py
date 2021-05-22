@@ -6,9 +6,9 @@ from sqlalchemy.orm import sessionmaker
 engine = create_engine('sqlite:///books.db', echo=False)
 Session = sessionmaker(bind=engine)
 session = Session()
-base = declarative_base
+Base = declarative_base
 
-class Book(base):
+class Book(Base):
     __tablename__ = 'books'
 
     id = Column(Integer, primary_key=True)
