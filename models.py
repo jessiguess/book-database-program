@@ -18,7 +18,7 @@ class Book(Base):
 
 
     def __repr__(self):
-        return f'Title: {self.title} Author: {self.author} Published: {self.published_date} Price: {self.price}'
+        return f'Title: "{self.title}" Author: {self.author} Published: {self.published_date} Price: ${self.price / 100}'
 # create a database
 # books.db
 # create a model
